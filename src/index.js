@@ -1,4 +1,4 @@
-export default {
+const helpers = {
   init({ wrapper = null, expect = null } = {}) {
     return {
       select(text, input) {
@@ -164,3 +164,5 @@ export default {
     };
   }
 };
+
+export default helpers;

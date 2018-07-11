@@ -8,25 +8,28 @@
     "email": "beth3346@gmail.com"
   },
   "dependencies": {
-    "babel-preset-env": "^1.6.1",
-    "babel-runtime": "^6.26.0"
+    "babel-runtime": "^6.26.0",
+    "jest": "^23.4.0"
   },
   "devDependencies": {
+    "babel-preset-env": "^1.7.0",
     "husky": "^1.0.0-rc.9",
     "webpack": "^4.0.0",
-    "webpack-cli": "^2.0.9"
+    "webpack-cli": "^3.0.8"
   },
   "keywords": [
     "javascript, testing, unit test, vue, jest"
   ],
   "license": "MIT",
-  "main": "dist/main.js",
+  "entry": "src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Beth3346/elr-vue-jest-helpers.git"
   },
   "scripts": {
-    "build": "npx webpack --mode='production'"
+    "dev": "npx webpack --config webpack.config.js",
+    "build": "npx webpack --mode='production'",
+    "test": "npx webpack --config webpack.config.js && jest"
   },
   "husky": {
     "hooks": {
