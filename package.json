@@ -21,7 +21,7 @@
     "javascript, testing, unit test, vue, jest"
   ],
   "license": "MIT",
-  "entry": "src/index.js",
+  "entry": "dist/bundle.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Beth3346/elr-vue-jest-helpers.git"
