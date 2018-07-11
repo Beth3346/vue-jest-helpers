@@ -1,17 +1,17 @@
 {
-  "name": "elr-vue-test-helpers",
+  "name": "elr-vue-jest-helpers",
   "description": "some vue test helper methods",
   "version": "0.0.1",
   "author": "Elizabeth Rogers",
   "bugs": {
-    "url": "https://github.com/Beth3346/elr-vue-test-helpers",
+    "url": "https://github.com/Beth3346/elr-vue-jest-helpers",
     "email": "beth3346@gmail.com"
   },
   "dependencies": {
     "babel-preset-env": "^1.6.1",
     "babel-runtime": "^6.26.0"
   },
-  "homepage": "https://github.com/Beth3346/elr-vue-test-helpers.git",
+  "homepage": "https://github.com/Beth3346/elr-vue-jest-helpers.git",
   "keywords": [
     "javascript, vue, unit test, testing, jest"
   ],
@@ -19,6 +19,6 @@
   "main": "src/main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Beth3346/elr-vue-test-helpers.git"
+    "url": "https://github.com/Beth3346/elr-vue-jest-helpers.git"
   }
 }
