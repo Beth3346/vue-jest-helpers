@@ -31,7 +31,7 @@
   "scripts": {
     "dev": "npx webpack --config webpack.config.js",
     "build": "npx webpack --mode='production'",
-    "test": "npx webpack --config webpack.config.js && jest"
+    "test": "jest"
   },
   "husky": {
     "hooks": {
