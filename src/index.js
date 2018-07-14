@@ -83,9 +83,9 @@ const helpers = {
       },
       see(text, selector = null) {
         if (selector) {
-          expect(wrapper.find(selector).text()).toBe(text);
+          expect(wrapper.find(selector).text()).toContain(text);
         } else {
-          expect(wrapper.text()).toBe(text);
+          expect(wrapper.text()).toContain(text);
         }
 
         return this;
@@ -158,6 +158,24 @@ const helpers = {
       },
       hasCount(selector, count) {
         expect(wrapper.findAll(selector).length).toBe(count);
+
+        return this;
+      },
+      hasClass(className, selector = null) {
+        if (selector) {
+          expect(wrapper.find(selector).classes()).toContain(className);
+        } else {
+          expect(wrapper.classes()).toContain(className);
+        }
+
+        return this;
+      },
+      notHaveClass(className, selector = null) {
+        if (selector) {
+          expect(wrapper.find(selector).classes()).not.toContain(className);
+        } else {
+          expect(wrapper.classes()).not.toContain(className);
+        }
 
         return this;
       }

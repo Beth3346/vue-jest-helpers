@@ -37,3 +37,5 @@ Initialize the helpers library in your beforeEach
 * IsValidInput
 * IsInvalidInput
 * HasCount
+* hasClass
+* notToHaveClass
