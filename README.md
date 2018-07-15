@@ -2,7 +2,7 @@
 
 #### A small library of test methods to speed up Vue component testing
 
-[![Build Status](https://travis-ci.org/Beth3346/vue-jest-helpers.svg?branch=master)](https://travis-ci.org/Beth3346/vue-jest-helpers)
+[![Build Status](https://travis-ci.com/Beth3346/vue-jest-helpers.svg?branch=master)](https://travis-ci.com/Beth3346/vue-jest-helpers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/dm/elr-vue-jest-helpers.svg?style=flat)]()
 
