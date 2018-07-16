@@ -178,6 +178,33 @@ const helpers = {
         }
 
         return this;
+      },
+      text(content, selector = null) {
+        if (selector) {
+          expect(wrapper.find(selector).text()).toBe(content);
+        } else {
+          expect(wrapper.text()).toBe(content);
+        }
+
+        return this;
+      },
+      isDisabled(selector = null) {
+        if (selector) {
+          expect(wrapper.find(selector).attributes().disabled).toBeTruthy();
+        } else {
+          expect(wrapper.attributes().disabled).toBeTruthy();
+        }
+
+        return this;
+      },
+      isNotDisabled(selector = null) {
+        if (selector) {
+          expect(wrapper.find(selector).attributes().disabled).toBeFalsy();
+        } else {
+          expect(wrapper.attributes().disabled).toBeFalsy();
+        }
+
+        return this;
       }
     };
   }

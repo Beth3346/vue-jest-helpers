@@ -16,32 +16,38 @@ or
 
     import helpers from 'elr-vue-jest-helpers';
 
-Initialize the helpers library in your beforeEach
+Initialize the helpers library after you mount your wrapper component
 pass in the Vue component instance
 pass in the expect method from Jest
+all methods are chainable
 
     h.init(wrapper, expect);
 
+\*\*\* if you mount your component again you must reinitialize the test utilities so they can interact with your new wrapper.
+
 ### Methods
 
-- Select
-- Type
-- Blur
-- Submit
-- Clear
-- Click
-- Emit
-- DoesNotEmit
-- PayloadEquals
-- Contains
-- DoesNotContain
-- Matches
-- See
-- Html
-- HasStyle
-- IsHidden
-- IsValidInput
-- IsInvalidInput
-- HasCount
+- select
+- type
+- blur
+- submit
+- clear
+- click
+- emit
+- doesNotEmit
+- payloadEquals
+- contains
+- doesNotContain
+- matches
+- see
+- html
+- hasStyle
+- isHidden
+- isValidInput
+- isInvalidInput
+- hasCount
 - hasClass
 - notToHaveClass
+- isDisabled
+- isNotDisabled
+- text
