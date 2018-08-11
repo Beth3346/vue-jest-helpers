@@ -21,7 +21,7 @@ pass in the Vue component instance
 pass in the expect method from Jest
 all methods are chainable
 
-    h.init(wrapper, expect);
+    h.init({wrapper, expect});
 
 \*\*\* if you mount your component again you must reinitialize the test utilities so they can interact with your new wrapper.
 
