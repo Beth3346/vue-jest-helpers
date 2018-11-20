@@ -51,17 +51,33 @@ h.select('California', '#states');
 - payloadEquals
   - check the content of an event payload
 - contains
+  - wrapper contains selector
 - doesNotContain
+  - wrapper does not contain selector
 - matches
+  - wrapper or selector html matches snapshot
 - see
+  - text is visible inside wrapper or provided selector
 - html
+  - wrapper or selector contains html
 - hasStyle
+  - style attribute or wrapper or selector matches provided style object
 - isHidden
+  - selector or wrapper is set to `display: none`
 - isValidInput
+  - checks if error message is not present
 - isInvalidInput
+  - checks if error message is present
 - hasCount
+  - checks that number of selectors matches expected count
 - hasClass
+  - checks that wrapper or selector has the expected class
 - notToHaveClass
+  - checks that wrapper or selector does not have the expected class
 - isDisabled
+  - checks that element has the disabled attribute
 - isNotDisabled
+  - checks that element does does not have the disabled attribute
 - text
+  - checks that wrapper or selector text matches provided text
+  - will check the entire string
