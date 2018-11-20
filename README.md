@@ -28,14 +28,28 @@ all methods are chainable
 ### Methods
 
 - select
+  - select an option in a select form field
+
+```javascript
+h.select('California', '#states');
+```
+
 - type
+  - type some input into a form field
 - blur
+  - trigger blur event on form field
 - submit
+  - trigger a submit event on a form field
 - clear
+  - clear value from form field
 - click
+  - trigger a click event
 - emit
+  - test that an event is emitted
 - doesNotEmit
+  - test that an event is not emmitted
 - payloadEquals
+  - check the content of an event payload
 - contains
 - doesNotContain
 - matches

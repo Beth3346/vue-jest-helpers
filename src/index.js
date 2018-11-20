@@ -82,10 +82,19 @@ const helpers = {
         return this;
       },
       see(text, selector = null) {
+        // make text lowercase
+        const expectedContent =
+          typeof text === 'string' ? text.toLowerCase() : null;
+
         if (selector) {
-          expect(wrapper.find(selector).text()).toContain(text);
+          expect(
+            wrapper
+              .find(selector)
+              .text()
+              .toLowerCase()
+          ).toContain(expectedContent);
         } else {
-          expect(wrapper.text()).toContain(text);
+          expect(wrapper.text().toLowerCase()).toContain(expectedContent);
         }
 
         return this;
